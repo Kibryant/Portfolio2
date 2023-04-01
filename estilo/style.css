@@ -1,0 +1,179 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;800;900&display=swap');
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+html, body, main
+{
+    width: 100vw;
+    height: 100vh;
+   
+}
+body
+{
+    background: url(../imagem/background.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+h1
+{
+    font-size: 2.5em;
+    padding: 5px;
+    color: #1C1926;
+
+}
+form
+{
+    transform: translate(-50%, -50%);
+
+    width: 90vw;
+    height: 65vh;
+    padding: 5px;
+
+    background-color: #c5769442;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.062);
+
+    position: relative;
+    left: 50%;
+    top: 45%;
+}
+.campo
+{
+    
+    border-radius: 20px;
+    
+
+    width: 100%;
+    height: 15vh;
+
+    margin: auto;
+
+    text-align: center;
+}
+form h1
+{
+    color: #1C1926;
+    text-align: center;
+    text-transform: uppercase;
+
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+ion-icon
+{
+    font-size: 3em;
+    color: #1C1926;
+}
+.campo label
+{
+    transform: translateY(33%);
+    margin-top: 60px;
+    width: 50px;
+    
+
+    display: inline-block;
+}
+.campo input
+{
+    display: inline-block;
+
+    font-size: 1em;
+    color: #C7CDE6;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    text-align: left;
+    text-indent: 20px;
+
+    height: 30%;
+    width: calc(100% - 85px);
+    
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+
+    transition: 0.5s;
+    z-index: 10;
+
+}
+.campo span
+{
+    position: absolute;
+    left: 0;
+    padding: 20px;
+    pointer-events: none;
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.campo input:valid ~ span,
+.campo input:focus ~ span
+{
+    color: #C7CDE6;
+    font-size: 0.75em;
+}
+.campo i 
+{
+    position: absolute;
+    left: 10px;
+    bottom: 10;
+    width: 90%;
+    margin-top: 130px;
+    height: 5px;
+    background-color: #1C1926;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+   
+}
+.links
+{
+    display: flex;
+    justify-content: space-between;
+}
+.links a
+{
+    margin: 10px;
+    font-size: 1em;
+    color: #1C1926;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+.links a:hover,
+.links a:nth-child(2)
+{
+    color: #C7CDE6;
+}
+input[type="submit"]
+{
+    color: #1C1926;
+    font-size: 1em;
+    font-weight: 800;
+    background-color: #C7CDE6;
+
+    margin-top: 20px;
+
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+}
+input[type="submit"]:active
+{
+    opacity: 0.8;
+
+}
